@@ -161,6 +161,8 @@ Implement authentication functionality using NextAuth in your application, inclu
 ![Screenshot 2024-08-09 150431](https://github.com/user-attachments/assets/51f528e9-fd15-4fbb-931c-e334a0b152d1)
 ![Screenshot 2024-08-09 150445](https://github.com/user-attachments/assets/1aa89acb-d7b8-401d-a5d1-ef94aa4f40a2)
 ![Screenshot 2024-08-09 150506](https://github.com/user-attachments/assets/2a94d225-93b6-485b-babe-1c9ff0daf717)
+![Screenshot 2024-08-05 222756](https://github.com/user-attachments/assets/14546031-6848-45d0-9abd-4b0ff43c3c9b)
+![Screenshot 2024-08-05 222940](https://github.com/user-attachments/assets/bd3592de-6dd4-47ef-ac25-53566d01e32d)
 
 
 ## Technologies Used
