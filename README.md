@@ -1,4 +1,4 @@
-Certainly! Below is the updated README file, tailored to include the specific task for integrating API data into your application.
+Here’s an updated version of your README file, incorporating the new Task 8: User Authentication.
 
 ---
 
@@ -19,6 +19,10 @@ This project is a job listing application built using Next.js, React, and Tailwi
     - [Objective](#objective-1)
     - [Steps](#steps-1)
     - [Additional Information](#additional-information)
+  - [Task 8: User Authentication](#task-8-user-authentication)
+    - [Objective](#objective-2)
+    - [Steps](#steps-2)
+    - [Additional Information](#additional-information-1)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 
@@ -29,6 +33,7 @@ This project is a job listing application built using Next.js, React, and Tailwi
 - Categories and required skills for each job
 - Avatar images for each job listing
 - Job listing dashboard styled with Tailwind CSS
+- User authentication with signup and signin functionality
 
 ## Prerequisites
 
@@ -98,29 +103,64 @@ Integrate data from a provided API endpoint into your application and populate t
    - Familiarize yourself with the structure of the data returned by the endpoint, including the fields and format.
 
 2. **Fetch Data from Endpoint:**
-   - Within your application, implement a function to fetch data from the API endpoint.
-   - Use appropriate methods such as `fetch()` or libraries like Axios to make an HTTP request to the endpoint.
-   - Ensure that the fetched data is an array of objects that you can use to populate the cards in the next step.
+   - Implement a function to fetch data from the API endpoint.
+   - Use methods like `fetch()` or libraries like Axios to make an HTTP request.
+   - Ensure the fetched data is an array of objects to populate the cards.
 
 3. **Populate Cards with Fetched Data:**
-   - Modify your application logic to replace the existing dummy data with the data fetched from the API endpoint.
-   - Populate the cards in your application with the fetched data, ensuring that each card corresponds to an object in the array.
-   - Display relevant information from the fetched data within each card, such as name, title, description, etc.
+   - Replace the existing dummy data with the fetched data.
+   - Display relevant information from the fetched data within each card.
 
 4. **Reach Out for Assistance:**
-   - If you encounter any challenges while fetching or integrating the API data into your application, don't hesitate to reach out to your mentors for assistance.
-   - Your mentors are available to provide guidance and support throughout the process.
-
+   - If challenges arise, reach out to mentors for guidance and support.
 
 **API Endpoint:**
 - Documentation: [Postman API Documentation](https://documenter.getpostman.com/view/27955515/2sA3rwMEUX)
 - Base URL: `https://akil-backend.onrender.com/`
 
+### Task 8: User Authentication
+
+**Objective:**
+
+Implement authentication functionality using NextAuth in your application, including signup and signin pages, and integrate with provided API endpoints for user registration and authentication.
+
+**Steps:**
+
+1. **Design Signup and Signin Pages:**
+   - Create pages/components for user signup and signin.
+   - Design these pages with attention to layout, forms, and user interaction.
+
+2. **Implement Signup Logic:**
+   - Use the provided signup endpoint to implement signup logic.
+   - Capture input data and send a POST request to the signup endpoint.
+   - Handle server responses, displaying error messages or success notifications.
+
+3. **Implement Sign In Logic:**
+   - Use the signin endpoint to implement signin logic.
+   - Capture input data and send a POST request to the signin endpoint.
+   - Retrieve and store the access token securely upon successful authentication.
+   - Handle authentication failures gracefully.
+
+4. **Reach Out to Mentors for Assistance:**
+   - Seek help from mentors if challenges arise during the implementation of authentication logic.
+
+**Additional Information:**
+
+- Securely handle sensitive user data like passwords and access tokens.
+- Implement client-side validation for input fields to enhance user experience.
+- Maintain clean, well-structured code, following best practices and coding conventions.
+
+**API Endpoints:**
+- Base URL: `https://akil-backend.onrender.com/`
+  - **Signup**: POST `/signup`
+  - **Verify Email**: POST `/verify-email`
+  - **Sign In**: POST `/login`
 
 ## Screenshots
 
-![Screenshot 2024-08-05 145303](https://github.com/user-attachments/assets/9a395f0a-c0c7-4ffb-83a8-1edfc1cf0377)
-![Screenshot 2024-08-05 145328](https://github.com/user-attachments/assets/b4ff8fb9-f998-439c-913f-0bd22b3b2883)
+![Screenshot 2024-08-09 150431](https://github.com/user-attachments/assets/51f528e9-fd15-4fbb-931c-e334a0b152d1)
+![Screenshot 2024-08-09 150445](https://github.com/user-attachments/assets/1aa89acb-d7b8-401d-a5d1-ef94aa4f40a2)
+![Screenshot 2024-08-09 150506](https://github.com/user-attachments/assets/2a94d225-93b6-485b-babe-1c9ff0daf717)
 
 
 ## Technologies Used
@@ -130,6 +170,8 @@ Integrate data from a provided API endpoint into your application and populate t
 - Tailwind CSS
 - TypeScript
 - react-icons
+- NextAuth
 
 ---
 
+This updated README now includes the new Task 8 on user authentication. Let me know if you need any further changes!
