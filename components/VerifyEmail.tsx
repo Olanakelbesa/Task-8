@@ -130,7 +130,7 @@ const VerifyEmail: React.FC<VerifyEmailProps> = ({
 	return (
 		<div>
 			<div>
-				<div className="flex justify-center p-10 mt-10">
+				<div className="flex justify-center pt-24 ">
 					<div className="font-black text-4xl text-gray-700">Verify Email</div>
 				</div>
 				<div className="flex justify-center">

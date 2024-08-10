@@ -55,7 +55,7 @@ const SignUp = () => {
 		<>
 			{isSignUp ? (
 				<div>
-					<div className="text-center pt-3 ">
+					<div className="text-center pt-14 ">
 						<div className="p-5">
 							<h1 className="text-3xl font-black">Sign Up Today!</h1>
 						</div>
@@ -104,14 +104,14 @@ const SignUp = () => {
 							onSubmit={handleSubmit(onSubmit)}
 						>
 							<div>
-								<div className="font-semibold text-blue-900 py-2 p-1">
+								<div className="font-semibold text-blue-900  p-1">
 									<label htmlFor="name">Full Name</label>
 								</div>
 								<input
 									id="name"
 									type="text"
 									placeholder="Enter your full name"
-									className="border-2 border-solid border-gray-200 p-3 rounded-lg outline-none w-full hover:border-gray-400"
+									className="border-2 border-solid border-gray-200 p-2 rounded-lg outline-none w-full hover:border-gray-400"
 									{...register("name", {
 										required: { value: true, message: "Full name is required" },
 									})}
@@ -121,14 +121,14 @@ const SignUp = () => {
 								</p>
 							</div>
 							<div className="pt-3">
-								<div className="font-semibold text-blue-900 py-2 p-1">
+								<div className="font-semibold text-blue-900 p-1">
 									<label htmlFor="email">Email Address</label>
 								</div>
 								<input
 									id="email"
 									type="email"
 									placeholder="Enter email address"
-									className="border-2 border-solid border-gray-200 p-3 rounded-lg outline-none w-full hover:border-gray-400"
+									className="border-2 border-solid border-gray-200 p-2 rounded-lg outline-none w-full hover:border-gray-400"
 									{...register("email", {
 										required: { value: true, message: "Email is required" },
 									})}
@@ -138,14 +138,14 @@ const SignUp = () => {
 								</p>
 							</div>
 							<div className="pt-3">
-								<div className="font-semibold text-blue-900 py-2 p-1">
+								<div className="font-semibold text-blue-900 p-1">
 									<label htmlFor="password">Password</label>
 								</div>
 								<input
 									id="password"
 									type="password"
 									placeholder="Enter password"
-									className="border-2 border-solid border-gray-200 p-3 rounded-lg outline-none w-full hover:border-gray-400"
+									className="border-2 border-solid border-gray-200 p-2 rounded-lg outline-none w-full hover:border-gray-400"
 									{...register("password", {
 										required: { value: true, message: "Password is required" },
 									})}
@@ -155,14 +155,14 @@ const SignUp = () => {
 								</p>
 							</div>
 							<div className="pt-3">
-								<div className="font-semibold text-blue-900 py-2 p-1">
+								<div className="font-semibold text-blue-900 p-1">
 									<label htmlFor="confirmPassword">Confirm Password</label>
 								</div>
 								<input
 									id="confirmPassword"
 									type="password"
 									placeholder="Confirm password"
-									className="border-2 border-solid border-gray-200 p-3 rounded-lg outline-none w-full hover:border-gray-400"
+									className="border-2 border-solid border-gray-200 p-2 rounded-lg outline-none w-full hover:border-gray-400"
 									{...register("confirmPassword", {
 										required: {
 											value: true,

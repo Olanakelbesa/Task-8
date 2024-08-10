@@ -9,8 +9,7 @@ const Dashboard = () => {
 	const { jobData, error, loading } = useJobData();
 
 	return (
-		<div className=" h-full w-full max-w-6xl pl-5 m-auto">
-			<SignOut />
+		<div className=" h-full w-full max-w-6xl pl-5 m-auto pt-14">
 			<Header num={jobData?.length ?? 0} />
 
 			{loading && <div>Loading...</div>}

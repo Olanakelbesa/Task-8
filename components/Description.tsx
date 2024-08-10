@@ -32,7 +32,7 @@ const Description = ({ id }: JobId) => {
 	}
 
 	return (
-		<div className="flex p-10  flex-col md:flex-row ">
+		<div className="flex  flex-col md:flex-row pt-20 pl-5">
 			<div id="leftSide" className="px-10 max-w-6xl w-full pr-20">
 				<div>
 					<h3 className="font-black text-xl">Description</h3>

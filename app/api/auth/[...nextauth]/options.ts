@@ -29,7 +29,7 @@ export const options: NextAuthOptions = {
 					return null;
 				}
 
-				console.log("credentails", credentials);
+				// console.log("credentails", credentials);
 
 				const res = await fetch("https://akil-backend.onrender.com/login", {
 					method: "POST",
@@ -43,7 +43,7 @@ export const options: NextAuthOptions = {
 				});
 
 				const user = await res.json();
-				console.log("Respones:", res.status, user);
+				// console.log("Respones:", res.status, user);
 				if (res.ok && user) {
 					user.role = "not verified";
 					return user;
@@ -59,7 +59,7 @@ export const options: NextAuthOptions = {
 		},
 		async session({ session, token }: any) {
 			if (session?.user) session.user = token.user;
-			console.log("session", session);
+			// console.log("session user", session.user);
 			return session;
 		},
 	},

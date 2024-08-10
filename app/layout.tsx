@@ -22,7 +22,10 @@ export default function RootLayout({
 				<head>
 					<link rel="icon" href="/assets/job-search_3688609.png" />
 				</head>
-				<body className={inter.className}>{children}</body>
+				<body className={inter.className}>
+					<NavBar />
+					{children}
+				</body>
 			</html>
 		</SessionWrapper>
 	);

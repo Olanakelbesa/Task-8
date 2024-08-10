@@ -21,7 +21,7 @@ const SignIn = () => {
 		const result = await signIn("credentials", {
 			email: formData.email,
 			password: formData.password,
-			redirect: false, // Prevent redirect to handle errors manually
+			redirect: false,
 		});
 
 		if (result?.error) {
@@ -34,7 +34,7 @@ const SignIn = () => {
 	};
 
 	return (
-		<div className="m-10">
+		<div className="pt-16">
 			<div className="text-center pt-8">
 				<div className="pt-5">
 					<h1 className="text-3xl font-black">Welcome Back,</h1>
