@@ -158,11 +158,14 @@ Implement authentication functionality using NextAuth in your application, inclu
 
 ## Screenshots
 
-![Screenshot 2024-08-09 150431](https://github.com/user-attachments/assets/51f528e9-fd15-4fbb-931c-e334a0b152d1)
-![Screenshot 2024-08-09 150445](https://github.com/user-attachments/assets/1aa89acb-d7b8-401d-a5d1-ef94aa4f40a2)
-![Screenshot 2024-08-09 150506](https://github.com/user-attachments/assets/2a94d225-93b6-485b-babe-1c9ff0daf717)
-![Screenshot 2024-08-05 222756](https://github.com/user-attachments/assets/14546031-6848-45d0-9abd-4b0ff43c3c9b)
-![Screenshot 2024-08-05 222940](https://github.com/user-attachments/assets/bd3592de-6dd4-47ef-ac25-53566d01e32d)
+![Screenshot 2024-08-10 100137](https://github.com/user-attachments/assets/dd588486-71fa-4a25-afb3-bfb1d29f84ac)
+![Screenshot 2024-08-10 100156](https://github.com/user-attachments/assets/de4de9a8-1afe-4566-a8cc-d7e7744bebca)
+![Screenshot 2024-08-10 100232](https://github.com/user-attachments/assets/4cc3fd90-267f-4bd2-a8c6-2c0d5156955f)
+![Screenshot 2024-08-10 100441](https://github.com/user-attachments/assets/59a52cc8-2567-4c41-b426-b9de5399090f)
+![Screenshot 2024-08-10 100510](https://github.com/user-attachments/assets/f0cb89bf-5402-4cb6-8c0e-ee2f2c06691d)
+![Screenshot 2024-08-10 100538](https://github.com/user-attachments/assets/7e6df3ef-be0d-4dbd-b457-d7f6f1866c99)
+![Screenshot 2024-08-10 100601](https://github.com/user-attachments/assets/53c978fd-4cb6-48ea-aa4a-d637c0e256dc)
+
 
 
 ## Technologies Used
