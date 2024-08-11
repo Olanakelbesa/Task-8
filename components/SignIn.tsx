@@ -98,9 +98,13 @@ const SignIn = () => {
 							</p>
 						)}
 					</div>
-					{authError && (
-						<p className="text-sm text-blue-500 p-2">{authError}</p>
-					)}
+					<div className="pt-3 ">
+						{authError && (
+							<p className="text-sm text-blue-500 py-1 text-center ">
+								{authError}
+							</p>
+						)}
+					</div>
 					<div className="flex justify-center py-5 w-full">
 						<button
 							type="submit"

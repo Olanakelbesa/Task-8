@@ -19,13 +19,20 @@ const NavBar = async () => {
 						<>
 							<Link
 								href="/dashboard"
-								className="hover:border-2 hover:border-solid hover:border-blue-300 hover:rounded-full px-2"
+								className="hover:border-2 hover:border-solid hover:border-blue-300 hover:border-opacity-50 hover:rounded-full px-2"
 							>
 								Dashboard
 							</Link>
 							<Link
+								href="/bookmarks"
+								className="hover:border-2 hover:border-solid hover:border-blue-300 hover:border-opacity-50 hover:rounded-full px-2"
+							>
+								Bookmark
+							</Link>
+
+							<Link
 								href="/api/auth/signout?callbackUrl=/"
-								className="hover:border-2 hover:border-solid hover:border-blue-300 hover:rounded-full px-2"
+								className="hover:border-2 hover:border-solid hover:border-blue-300 hover:border-opacity-50 hover:rounded-full px-2"
 							>
 								Logout
 							</Link>

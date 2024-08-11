@@ -1,6 +1,6 @@
 import GoogleProvider from "next-auth/providers/google";
-import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { NextAuthOptions } from "next-auth";
 
 export const options: NextAuthOptions = {
 	providers: [
@@ -8,13 +8,10 @@ export const options: NextAuthOptions = {
 			clientId: process.env.GOOGLE_CLIENT_ID as string,
 			clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
 			profile(profile) {
-				console.log("Google profile:", profile);
-
-				let userRole = "Google User";
 				return {
 					...profile,
 					id: profile.sub,
-					role: userRole,
+					role: "Google User",
 				};
 			},
 		}),
@@ -25,43 +22,56 @@ export const options: NextAuthOptions = {
 				password: { label: "Password", type: "password" },
 			},
 			async authorize(credentials, req) {
-				if (!credentials) {
+				if (!credentials) return null;
+
+				try {
+					const res = await fetch("https://akil-backend.onrender.com/login", {
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify({
+							email: credentials.email,
+							password: credentials.password,
+						}),
+					});
+
+					const user = await res.json();
+
+					if (!res.ok || !user) {
+						throw new Error(user?.message || "Invalid credentials");
+					}
+
+					// Ensure user contains all required fields
+					return {
+						...user,
+						role: "not verified",
+						token: user.token, // Make sure to store the token
+					};
+				} catch (error) {
+					console.error("Authorization error:", error);
 					return null;
 				}
-
-				// console.log("credentails", credentials);
-
-				const res = await fetch("https://akil-backend.onrender.com/login", {
-					method: "POST",
-					body: JSON.stringify({
-						email: credentials.email,
-						password: credentials.password,
-					}),
-					headers: {
-						"Content-Type": "application/json",
-					},
-				});
-
-				const user = await res.json();
-				// console.log("Respones:", res.status, user);
-				if (res.ok && user) {
-					user.role = "not verified";
-					return user;
-				}
-				return null;
 			},
 		}),
 	],
 	callbacks: {
-		async jwt({ user, token }) {
-			if (user) token.user = user;
+		async jwt({ token, user }) {
+			if (user) {
+				token.user = user;
+				// token.accessToken = user.data.accessToken; // Store the JWT from the backend
+				// console.log("user Token", token);
+			}
 			return token;
 		},
-		async session({ session, token }: any) {
-			if (session?.user) session.user = token.user;
-			// console.log("session user", session.user);
+		async session({ session, token }) {
+			if (token.user) {
+				session.user = token.user;
+				session.user.accessToken = token.user.data.accessToken; // Pass the access token to the session
+			}
+			// console.log("session", session);
 			return session;
 		},
 	},
-	pages: { signIn: "/signin" },
+	pages: {
+		signIn: "/signin",
+	},
 };

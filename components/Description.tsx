@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import useJobData from "@/utils/JobData";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaFire, FaPlus, FaRegCalendarCheck } from "react-icons/fa";
