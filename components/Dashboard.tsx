@@ -62,7 +62,7 @@ const Dashboard = () => {
 	};
 
 	return (
-		<div className="h-full w-full max-w-6xl pl-5 m-auto pt-14">
+		<div className="h-full w-full max-w-4xl px-5 m-auto pt-14 md:px-0">
 			<Header num={jobData?.length ?? 0} />
 			{loading && <div className="text-center">Loading...</div>}
 			{error && <div>Error: {error}</div>}

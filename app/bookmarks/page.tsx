@@ -62,14 +62,14 @@ const Bookmarks = () => {
 	};
 
 	return (
-		<div className="h-full w-full max-w-6xl pl-5 m-auto pt-20">
+		<div className="h-full w-full max-w-4xl m-auto pt-20">
 			{loading && <div className="text-center">Loading...</div>}
 			{error && <div>Error: {error}</div>}
 
 			{!loading &&
 				!error &&
 				(Object.keys(bookmarked).length > 0 ? (
-					jobData?.map((job) =>
+					jobData?.map((job, index) =>
 						bookmarked[job.id] ? (
 							<div
 								key={job.id}
@@ -85,7 +85,7 @@ const Bookmarks = () => {
 										className="cursor-pointer"
 									/>
 								</div>
-								<Link href={`/JobDes/${job.id}`}>
+								<Link href={`/JobDes/${index}`}>
 									<JobCardList job={job} />
 								</Link>
 							</div>

@@ -43,7 +43,7 @@ export const options: NextAuthOptions = {
 					// Ensure user contains all required fields
 					return {
 						...user,
-						role: "not verified",
+						role: "user",
 						token: user.token, // Make sure to store the token
 					};
 				} catch (error) {
@@ -57,7 +57,7 @@ export const options: NextAuthOptions = {
 		async jwt({ token, user }) {
 			if (user) {
 				token.user = user;
-				// token.accessToken = user.data.accessToken; // Store the JWT from the backend
+				token.accessToken = user.data.accessToken; // Store the JWT from the backend
 				// console.log("user Token", token);
 			}
 			return token;
@@ -67,7 +67,6 @@ export const options: NextAuthOptions = {
 				session.user = token.user;
 				session.user.accessToken = token.user.data.accessToken; // Pass the access token to the session
 			}
-			// console.log("session", session);
 			return session;
 		},
 	},
