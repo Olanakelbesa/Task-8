@@ -8,7 +8,7 @@ import Image from "next/image";
 import bookmarkIcon from "@/public/assets/bookmark.png";
 import unbookmarkIcon from "@/public/assets/unbookmark.png";
 import { useSession } from "next-auth/react";
-import { BookmarkCrud, getBookmarks } from "@/app/api/bookmarks";
+import { BookmarkCrud, getBookmarks } from "@/app/api/bookmarkApi";
 import undrawBookmark from "@/public/assets/undraw_bookmarks_re_mq1u.svg";
 
 const Bookmarks = () => {

@@ -9,7 +9,7 @@ import Image from "next/image";
 import bookmarkIcon from "@/public/assets/bookmark.png";
 import unbookmarkIcon from "@/public/assets/unbookmark.png";
 import { useSession } from "next-auth/react";
-import { BookmarkCrud, getBookmarks } from "@/app/api/bookmarks";
+import { BookmarkCrud, getBookmarks } from "@/app/api/bookmarkApi";
 
 const Dashboard = () => {
 	const { jobData, error, loading } = useJobData();
@@ -39,6 +39,10 @@ const Dashboard = () => {
 	}, [token]);
 
 	const handleBookmarkClick = async (id: string) => {
+		if (!session?.user?.accessToken) {
+			console.log("No session token available");
+			return;
+		}
 		const isBookmark = bookmarked[id];
 
 		// Optimistically update UI
@@ -55,7 +59,7 @@ const Dashboard = () => {
 				// Revert state if API call fails
 				setBookmarked((prevState) => ({
 					...prevState,
-					[id]: isBookmark,
+					[id]: !isBookmark,
 				}));
 			}
 		}

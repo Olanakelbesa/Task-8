@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { JobDetails } from "@/types/JobDetails";
 import { useSession } from "next-auth/react";
+import EventImg from "@/public/assets/event.png";
 
 interface JobCardProps {
 	job: JobDetails;
@@ -9,7 +10,8 @@ interface JobCardProps {
 
 const JobCardList: React.FC<JobCardProps> = ({ job }) => {
 	const { data: session } = useSession();
-	function capitalizeFirstLetter(string: string): string {
+	function capitalizeFirstLetter(string: string | undefined): string {
+		if (!string) return "";
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 
@@ -17,7 +19,7 @@ const JobCardList: React.FC<JobCardProps> = ({ job }) => {
 		<div>
 			<div className="flex">
 				<Image
-					src={job.logoUrl}
+					src={job.logoUrl || EventImg}
 					alt={job.title}
 					width={50}
 					height={50}

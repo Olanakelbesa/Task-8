@@ -66,6 +66,7 @@ export const options: NextAuthOptions = {
 			if (token.user) {
 				session.user = token.user;
 				session.user.accessToken = token.user.data.accessToken; // Pass the access token to the session
+				// console.log(session);
 			}
 			return session;
 		},
