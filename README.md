@@ -1,6 +1,3 @@
-Here’s an updated version of your README file, incorporating the new Task 8: User Authentication.
-
----
 
 # Job Listing Application
 
@@ -13,16 +10,9 @@ This project is a job listing application built using Next.js, React, and Tailwi
 - [Getting Started](#getting-started)
 - [Task Series](#task-series)
   - [Task 6: Building Job Listing Application](#task-6-building-job-listing-application)
-    - [Objective](#objective)
-    - [Steps](#steps)
   - [Task 7: Integrating API Data into the Application](#task-7-integrating-api-data-into-the-application)
-    - [Objective](#objective-1)
-    - [Steps](#steps-1)
-    - [Additional Information](#additional-information)
   - [Task 8: User Authentication](#task-8-user-authentication)
-    - [Objective](#objective-2)
-    - [Steps](#steps-2)
-    - [Additional Information](#additional-information-1)
+  - [Task 9: Implementing Bookmark Functionality and Testing](#task-9-implementing-bookmark-functionality-and-testing)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 
@@ -34,6 +24,7 @@ This project is a job listing application built using Next.js, React, and Tailwi
 - Avatar images for each job listing
 - Job listing dashboard styled with Tailwind CSS
 - User authentication with signup and signin functionality
+- Bookmark functionality to save job positions
 
 ## Prerequisites
 
@@ -156,6 +147,41 @@ Implement authentication functionality using NextAuth in your application, inclu
   - **Verify Email**: POST `/verify-email`
   - **Sign In**: POST `/login`
 
+### Task 9: Implementing Bookmark Functionality and Testing
+
+**Objective:**
+
+Enhance the job listing application by implementing bookmark functionality and ensuring its reliability through thorough testing.
+
+**Steps:**
+
+1. **Add a Bookmark Toggle Button:**
+   - Modify the job position card component created in Task 6 to include a toggle button for bookmarking.
+   - This toggle button should allow users to bookmark or remove a job position from their saved list.
+
+2. **Implement Bookmark Logic:**
+   - Utilize the provided endpoint to implement the logic for bookmarking a job position.
+   - Ensure that only authenticated users can access the bookmark functionality.
+   - When a user toggles the bookmark button, send a request to the bookmark endpoint with the necessary data.
+
+3. **Finalize:**
+   - Verify that only authenticated users can access the bookmark feature.
+   - Ensure that searching job positions returns accurate results based on the title.
+   - Finalize all tasks and ensure that the entire application is working correctly.
+
+4. **Testing with Jest:**
+   - Write unit tests using Jest to validate the functionality of bookmarking a job position and ensuring that the toggle button works as expected.
+   - Perform component testing to validate the rendering of the job posting card and job not found card.
+
+5. **Testing with Cypress:**
+   - Write end-to-end (E2E) tests using Cypress to test the bookmark functionality from a user's perspective.
+   - Create test scenarios that mimic user interactions, such as clicking on the bookmark toggle button, verifying the bookmarked status, and checking if the job position appears in the bookmarked list.
+   - Include assertions to verify the correct behavior of the bookmark feature across different user flows and scenarios.
+
+**API Endpoints:**
+- Base URL: `https://akil-backend.onrender.com/`
+  - **Bookmark**: POST `/bookmark`
+
 ## Screenshots
 
 ![Screenshot 2024-08-10 100137](https://github.com/user-attachments/assets/dd588486-71fa-4a25-afb3-bfb1d29f84ac)
@@ -165,6 +191,12 @@ Implement authentication functionality using NextAuth in your application, inclu
 ![Screenshot 2024-08-10 100510](https://github.com/user-attachments/assets/f0cb89bf-5402-4cb6-8c0e-ee2f2c06691d)
 ![Screenshot 2024-08-10 100538](https://github.com/user-attachments/assets/7e6df3ef-be0d-4dbd-b457-d7f6f1866c99)
 ![Screenshot 2024-08-10 100601](https://github.com/user-attachments/assets/53c978fd-4cb6-48ea-aa4a-d637c0e256dc)
+![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/35004cba-f58b-442e-a8dd-cd4ccb85399e)
+![Screenshot 2024-08-14 081355](https://github.com/user-attachments/assets/06501880-6cb7-44ec-969e-3ae076675c59)
+![Screenshot 2024-08-14 080444](https://github.com/user-attachments/assets/0ba063b4-aeb0-4c45-b3ee-971afa6531df)
+![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/51d0e029-81bb-4d14-a214-40b847f77760)
+
+
 
 
 
@@ -176,7 +208,6 @@ Implement authentication functionality using NextAuth in your application, inclu
 - TypeScript
 - react-icons
 - NextAuth
+- Jest
+- Cypress
 
----
-
-This updated README now includes the new Task 8 on user authentication. Let me know if you need any further changes!
