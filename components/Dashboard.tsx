@@ -81,6 +81,7 @@ const Dashboard = () => {
 							alt={bookmarked[job.id] ? "Bookmarked" : "Unbookmarked"}
 							width={20}
 							height={20}
+							data-testid="bookmark-button"
 							onClick={() => handleBookmarkClick(job.id)}
 							className="cursor-pointer"
 						/>

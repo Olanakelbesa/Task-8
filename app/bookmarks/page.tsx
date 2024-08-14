@@ -63,7 +63,7 @@ const Bookmarks = () => {
 
 	return (
 		<div className="h-full w-full max-w-4xl m-auto pt-20">
-			{loading && <div className="text-center">Loading...</div>}
+			{loading && <div className="text-center pt-10">Loading...</div>}
 			{error && <div>Error: {error}</div>}
 
 			{!loading &&
