@@ -189,14 +189,10 @@ Enhance the job listing application by implementing bookmark functionality and e
 ![Screenshot 2024-08-10 100232](https://github.com/user-attachments/assets/4cc3fd90-267f-4bd2-a8c6-2c0d5156955f)
 ![Screenshot 2024-08-10 100441](https://github.com/user-attachments/assets/59a52cc8-2567-4c41-b426-b9de5399090f)
 ![Screenshot 2024-08-10 100510](https://github.com/user-attachments/assets/f0cb89bf-5402-4cb6-8c0e-ee2f2c06691d)
-![Screenshot 2024-08-10 100601](https://github.com/user-attachments/assets/53c978fd-4cb6-48ea-aa4a-d637c0e256dc)
-![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/35004cba-f58b-442e-a8dd-cd4ccb85399e)
-![Screenshot 2024-08-14 081355](https://github.com/user-attachments/assets/06501880-6cb7-44ec-969e-3ae076675c59)
-![Screenshot 2024-08-14 080444](https://github.com/user-attachments/assets/0ba063b4-aeb0-4c45-b3ee-971afa6531df)
-![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/51d0e029-81bb-4d14-a214-40b847f77760)
-
-
-
+![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/f4706100-905c-4541-a6e0-a04ba746ac89)
+![Screenshot 2024-08-14 081402](https://github.com/user-attachments/assets/028149f6-4d78-4a8f-bd97-679385b1e8b8)
+![Screenshot 2024-08-14 080501](https://github.com/user-attachments/assets/9a207ee0-dec1-4208-9de1-136cc577cb77)
+![Uploading Screenshot 2024-08-14 080623.png…]()
 
 
 ## Technologies Used
