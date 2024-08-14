@@ -192,7 +192,8 @@ Enhance the job listing application by implementing bookmark functionality and e
 ![Screenshot 2024-08-14 081345](https://github.com/user-attachments/assets/f4706100-905c-4541-a6e0-a04ba746ac89)
 ![Screenshot 2024-08-14 081402](https://github.com/user-attachments/assets/028149f6-4d78-4a8f-bd97-679385b1e8b8)
 ![Screenshot 2024-08-14 080501](https://github.com/user-attachments/assets/9a207ee0-dec1-4208-9de1-136cc577cb77)
-![Uploading Screenshot 2024-08-14 080623.png…]()
+![Screenshot 2024-08-14 080623](https://github.com/user-attachments/assets/3c1125ea-db46-434e-9227-b1c38f502b0b)
+
 
 
 ## Technologies Used
